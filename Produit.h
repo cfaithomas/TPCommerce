@@ -25,23 +25,13 @@ public:
     /******************getters***********************************/
     const string &getNom() const;
 
-    void setNom(const string &nom);
-
     float getPrixachat() const;
-
-    void setPrixachat(float prixachat);
 
     float getPrixvente() const;
 
-    void setPrixvente(float prixvente);
-
     int getNombreExemplaire() const;
 
-    void setNombreExemplaire(int nombreExemplaire);
-
     const string &getDescription() const;
-
-    void setDescription(const string &description);
 };
 
 

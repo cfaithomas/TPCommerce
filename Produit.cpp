@@ -33,38 +33,21 @@ const string &Produit::getNom() const {
     return nom;
 }
 
-void Produit::setNom(const string &nom) {
-    Produit::nom = nom;
-}
-
 float Produit::getPrixachat() const {
     return prixachat;
-}
-
-void Produit::setPrixachat(float prixachat) {
-    Produit::prixachat = prixachat;
 }
 
 float Produit::getPrixvente() const {
     return prixvente;
 }
 
-void Produit::setPrixvente(float prixvente) {
-    Produit::prixvente = prixvente;
-}
-
 int Produit::getNombreExemplaire() const {
     return nombreExemplaire;
-}
-
-void Produit::setNombreExemplaire(int nombreExemplaire) {
-    Produit::nombreExemplaire = nombreExemplaire;
 }
 
 const string &Produit::getDescription() const {
     return description;
 }
 
-void Produit::setDescription(const string &description) {
-    Produit::description = description;
+
 }
