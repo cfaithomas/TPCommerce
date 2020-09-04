@@ -50,4 +50,4 @@ const string &Produit::getDescription() const {
 }
 
 
-}
+
