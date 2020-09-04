@@ -19,6 +19,8 @@ public:
     virtual ~Magasin();
 
     void ajouterProduit(const string &nom,float prixachat,float prixvente);
+    void ajouterCd(const string &nom, float prixachat,  float prixvente, const string &interprete, const string &auteur,const vector<string> &listepistes);
+    void ajouterlivre(const string &nom,float prixachat,float prixvente,const string &auteur,const string &editeur);
     void acheterProduit(int referenceProduit,int nombreExemplaires);
     void vendreProduit(int referenceProduit, int  nombreExemplaires);
 

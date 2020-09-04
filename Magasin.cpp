@@ -5,6 +5,9 @@
 #include <iostream>
 #include <iomanip>
 #include "Magasin.h"
+#include "Cd.h"
+#include "Livre.h"
+
 Magasin::Magasin() {
     solde=100;
 }
@@ -46,6 +49,17 @@ Magasin::~Magasin() {
         delete(p); //on détruit tous les pointeurs crées avec le new
     }
 
+}
+
+void
+Magasin::ajouterCd(const string &nom, float prixachat, float prixvente, const string &interprete, const string &auteur,
+                   const vector<string> &listepistes) {
+stock.push_back(new Cd(nom,prixvente,prixachat,interprete,auteur,listepistes));
+}
+
+void Magasin::ajouterlivre(const string &nom, float prixachat, float prixvente, const string &auteur,
+                           const string &editeur) {
+stock.push_back(new Livre(nom,prixachat,prixvente,auteur,editeur));
 }
 
 
