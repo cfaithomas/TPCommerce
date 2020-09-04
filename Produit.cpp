@@ -49,5 +49,9 @@ const string &Produit::getDescription() const {
     return description;
 }
 
+Produit::~Produit() {
+
+}
+
 
 

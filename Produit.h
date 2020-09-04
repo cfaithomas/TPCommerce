@@ -17,8 +17,11 @@ class Produit {
 public:
     /**********************constructor***************************/
     Produit(const string &nom, float prixachat, float prixvente);
+
+    virtual ~Produit();  //destructeur virtuel car présence d'une méthode virtuelle
+
     /*********************methods*******************************/
-    void afficherDescription();
+    virtual void afficherDescription(); //méthode virtuelle = méthode candidate à la redéfinition
     void editerDescription(const string &description);
     void augmenterExemplaire(const int nbex);
     void diminuerxemplaire(const int nbex);
