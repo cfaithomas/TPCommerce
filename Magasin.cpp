@@ -15,7 +15,7 @@ stock.push_back(new Produit(nom,prixachat,prixvente));
 
 void Magasin::acheterProduit(int referenceProduit, int nombreExemplaires) {
 stock[referenceProduit]->augmenterExemplaire(nombreExemplaires);
-solde-=stock[referenceProduit]->getPrixachat()*(float)nombreExemplaires;
+solde-=stock[referenceProduit]->getPrixachat()*nombreExemplaires;
 }
 void Magasin::vendreProduit(int referenceProduit, int nombreExemplaires) {
     stock[referenceProduit]->diminuerxemplaire(nombreExemplaires);
