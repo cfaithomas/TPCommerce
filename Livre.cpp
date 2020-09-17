@@ -12,5 +12,5 @@ Produit(nom,prixachat,prixvente),auteur(auteur),editeur(editeur) {
 
 void Livre::afficherDescription() {
     Produit::afficherDescription();
-    cout<<auteur<<" "<<editeur<<endl;
+    cout<<"Auteur:"<<auteur<<" Editeur:"<<editeur<<endl;
 }

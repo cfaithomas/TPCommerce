@@ -29,6 +29,20 @@ public:
     float getSolde() const;
 
     void bilan();
+
+    void interaction(); //menu principal
+
+    void submenu(const string &type); //sous menu avec en parametre le type (cd,livre ou produit)
+
+    int choixproduit(const string &type); //permet de choisir la référence d'un produit avec un type (cd,livre ou produit)
+
+    int choixqte(); //saisie des quantités
+
+    const string saisieinformation(const string &type); //saisie des toutes les informations textuelles (auteur,editeur,nom)
+
+    float saisieprix(const string &type); //saisie des prix parametre(cd,livre,produit)
+
+    vector<string> saisielistetitre(); //saisie des pistes du cd
 };
 
 

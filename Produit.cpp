@@ -13,7 +13,7 @@ Produit::Produit(const string &nom, float prixachat, float prixvente) : nom(nom)
 
 void Produit::afficherDescription() {
 
-    cout<<description<<endl;
+    cout<<"Description: "<<description<<endl;
 
 }
 

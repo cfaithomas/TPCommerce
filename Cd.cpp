@@ -11,8 +11,9 @@ Cd::Cd(const string &nom, float prixachat, float prixvente, const string &interp
 
 void Cd::afficherDescription() {
     Produit::afficherDescription();
-    cout<<interprete<<" "<<auteur<<endl;
-    for(int i=0;i<listepistes.size();i++)
+    cout<<"interprete: "<<interprete<<" Auteur:"<<auteur<<endl;
+    cout<<"************************liste des pistes*************************"<<endl;
+    for(int i=0;i<listepistes.size()-1;i++)
     {
         cout<<i<<")"<<listepistes[i]<<endl;
     }
